@@ -4,6 +4,17 @@ class Calculator {
     this.yOperand = yOperand;
     this.setX();
     this.setY();
+    this.checkValue();
+  }
+  checkValue() {
+    if (
+      this.xOperand === Infinity ||
+      this.yOperand === Infinity ||
+      typeof this.xOperand != "number" ||
+      typeof this.yOperand != "number"
+    ) {
+      throw new Error("All value's type should be a number!");
+    }
   }
   setX() {
     if (typeof this.xOperand === "undefined") {
