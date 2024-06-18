@@ -1,7 +1,7 @@
 class Calculator {
   constructor(xOperand, yOperand) {
-    this.xOperand = xOperand || +prompt("Enter a number", 1);
-    this.yOperand = yOperand || +prompt("Enter a number", 1);
+    this.xOperand = xOperand;
+    this.yOperand = yOperand;
     this.setX();
     this.setY();
   }
